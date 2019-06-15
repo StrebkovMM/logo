@@ -1,0 +1,46 @@
+.header
+	background: linear-gradient(to right, white 59.4%, #f7f7f7 40.6%)
+	&-block
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+	&-navbar
+		&__list
+			padding: 0
+			display: flex
+			flex-direction: row
+			justify-content: space-between	
+			list-style-type: none
+			margin-top: 7px
+			margin-left: 40px
+		&__item
+			+reg
+			color: $text-color
+			margin-right: 28px
+			&:after 
+				content: ''
+				margin-left: 28px
+				border: 1px solid $text-color
+				opacity: 0.149
+			&:last-child
+				&:after
+					display: none
+	&-contacts
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		margin-top: -4px
+		&__button
+			margin-left: 42px
+		&__phone
+			margin-bottom: 3px
+			.phone-number	
+				font-size: 18px
+				color: $text-color
+				+reg
+			.phone-number__bold
+				+bold
+			
+

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'ProximaNovaRg';
+    src: url('../fonts/ProximaNovaReg/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNovaReg/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNovaReg/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNovaReg/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('../fonts/ProximaNovaBold/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNovaBold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNovaBold/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNovaBold/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@mixin reg{
+	font-family: 'ProximaNovaRg', sans-serif;
+    font-weight: 400;
+	
+}
+
+@mixin bold{
+    font-family: 'ProximaNovaBold', sans-serif;
+    font-weight: 700;
+}
