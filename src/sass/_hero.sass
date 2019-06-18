@@ -1,47 +1,102 @@
 .hero
-	background: url('../image/hero/hero-bg.jpg') no-repeat
-	background-position: center center
-	background-size: cover 
 	height: 742px
 	margin-top: 3px
-.slider	
-	&-item
-		outline: none	
-		text-decoration: none
-		margin-top: 168px			 
-		&__title
-			margin-left: -2px
-			margin-bottom: 0
-			color: $main-color
-			font-size: 35px
-			text-transform: uppercase
-			line-height: 55px
-			+sbld
-		&__subtitle
-			margin-left: -2px
-			margin-top: -5px
-			display: block 
-			color: #ffffff	
-			font-size: 35px
-			line-height: 55px
-			+reg
-		&__text
-			margin-top: -1px
-			display: block
-			padding-top: 20px
-			font-size: 20px
-			line-height: 28px	
-			color: #ffffff
-			opacity: 0.5
-			+lt
-		&__button
-			margin-top: 50px
-			font-size: 18px
-			line-height: 40px
-			+sbld
-			text-transform: uppercase
-			padding-left: 38px
-			padding-right: 38px
+	&-slider
+		&__one
+			background: url('../image/hero/hero-bg__one.jpg') no-repeat
+			background-position: center center
+			background-size: cover 
+			height: 742px
+		&__two
+			background: url('../image/hero/hero-bg__two.jpg') no-repeat
+			background-position: center center
+			background-size: cover 
+			height: 742px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				display: block
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: black 
+				opacity: 0.5
+		&__three
+			background: url('../image/hero/hero-bg__three.jpg') no-repeat
+			background-position: center center
+			background-size: cover 
+			height: 742px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				display: block
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: black 
+				opacity: 0.5
+		&__four
+			background: url('../image/hero/hero-bg__four.jpg') no-repeat
+			background-position: center center
+			background-size: cover 
+			height: 742px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				display: block
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: black 
+				opacity: 0.5			
+
+	.slider	
+		&-item
+			position: relative
+			outline: none	
+			text-decoration: none
+			padding-top: 168px	
+			z-index: 2
+	 		
+			&__title
+				margin-left: -2px
+				margin-bottom: 0
+				color: $main-color
+				font-size: 35px
+				text-transform: uppercase
+				line-height: 55px
+				+sbld
+			&__subtitle
+				margin-left: -2px
+				margin-top: -5px
+				display: block 
+				color: #ffffff	
+				font-size: 35px
+				line-height: 55px
+				+reg
+			&__text
+				margin-top: -1px
+				display: block
+				padding-top: 20px
+				font-size: 20px
+				line-height: 28px	
+				color: #ffffff
+				opacity: 0.5
+				+lt
+			&__button
+				margin-top: 50px
+				font-size: 18px
+				line-height: 40px
+				+sbld
+				text-transform: uppercase
+				padding-left: 38px
+				padding-right: 38px
 			
 
 
@@ -53,7 +108,7 @@
 	list-style: none
 	text-align: center
 	top: 657px
-	& li 
+	li 
 		display: inline-block
 		width: 20px
 		height: 20px
@@ -61,7 +116,7 @@
 		padding: 0
 		cursor: pointer
 		list-style: none
-		& button
+		button
 			font-size: 0
 			line-height: 0
 			display: block
@@ -71,7 +126,8 @@
 			cursor: pointer
 			border: 0
 			outline: none
-			background: #ffffff
-			&:hover
-				background-color: $main-color
+			background: #ffffff			
+		&.slick-active button
+			background: $main-color	
+			color: $main-color		
 			/* style */	

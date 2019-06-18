@@ -359,6 +359,13 @@ a {
   outline: none;
   cursor: pointer; }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 750px; } }
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 90%; } }
 .header {
   background: -webkit-gradient(linear, left top, right top, color-stop(59.4%, white), color-stop(40.6%, #f7f7f7));
   background: linear-gradient(to right, white 59.4%, #f7f7f7 40.6%);
@@ -392,7 +399,7 @@ a {
             justify-content: space-between;
     list-style-type: none;
     margin-top: 7px;
-    margin-left: 40px; }
+    margin-left: 18px; }
   .header-navbar__item {
     font-family: 'ProximaNovaRg', sans-serif;
     color: #333333;
@@ -406,7 +413,8 @@ a {
     .header-navbar__item:last-child:after {
       display: none; }
   .header-navbar__link {
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
     .header-navbar__link:after {
       content: "";
       z-index: 1;
@@ -525,49 +533,100 @@ a {
   display: none; }
 
 .hero {
-  background: url("../image/hero/hero-bg.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
   height: 742px;
   margin-top: 3px; }
-
-.slider-item {
-  outline: none;
-  text-decoration: none;
-  margin-top: 168px; }
-  .slider-item__title {
-    margin-left: -2px;
-    margin-bottom: 0;
-    color: #ffd332;
-    font-size: 35px;
-    text-transform: uppercase;
-    line-height: 55px;
-    font-family: 'ProximaNovaSemibold', sans-serif; }
-  .slider-item__subtitle {
-    margin-left: -2px;
-    margin-top: -5px;
-    display: block;
-    color: #ffffff;
-    font-size: 35px;
-    line-height: 55px;
-    font-family: 'ProximaNovaRg', sans-serif; }
-  .slider-item__text {
-    margin-top: -1px;
-    display: block;
-    padding-top: 20px;
-    font-size: 20px;
-    line-height: 28px;
-    color: #ffffff;
-    opacity: 0.5;
-    font-family: 'ProximaNovaLt', sans-serif; }
-  .slider-item__button {
-    margin-top: 50px;
-    font-size: 18px;
-    line-height: 40px;
-    font-family: 'ProximaNovaSemibold', sans-serif;
-    text-transform: uppercase;
-    padding-left: 38px;
-    padding-right: 38px; }
+  .hero-slider__one {
+    background: url("../image/hero/hero-bg__one.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 742px; }
+  .hero-slider__two {
+    background: url("../image/hero/hero-bg__two.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 742px;
+    position: relative; }
+    .hero-slider__two:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.5; }
+  .hero-slider__three {
+    background: url("../image/hero/hero-bg__three.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 742px;
+    position: relative; }
+    .hero-slider__three:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.5; }
+  .hero-slider__four {
+    background: url("../image/hero/hero-bg__four.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 742px;
+    position: relative; }
+    .hero-slider__four:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.5; }
+  .hero .slider-item {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    padding-top: 168px;
+    z-index: 2; }
+    .hero .slider-item__title {
+      margin-left: -2px;
+      margin-bottom: 0;
+      color: #ffd332;
+      font-size: 35px;
+      text-transform: uppercase;
+      line-height: 55px;
+      font-family: 'ProximaNovaSemibold', sans-serif; }
+    .hero .slider-item__subtitle {
+      margin-left: -2px;
+      margin-top: -5px;
+      display: block;
+      color: #ffffff;
+      font-size: 35px;
+      line-height: 55px;
+      font-family: 'ProximaNovaRg', sans-serif; }
+    .hero .slider-item__text {
+      margin-top: -1px;
+      display: block;
+      padding-top: 20px;
+      font-size: 20px;
+      line-height: 28px;
+      color: #ffffff;
+      opacity: 0.5;
+      font-family: 'ProximaNovaLt', sans-serif; }
+    .hero .slider-item__button {
+      margin-top: 50px;
+      font-size: 18px;
+      line-height: 40px;
+      font-family: 'ProximaNovaSemibold', sans-serif;
+      text-transform: uppercase;
+      padding-left: 38px;
+      padding-right: 38px; }
 
 .my-dots {
   position: absolute;
@@ -595,9 +654,80 @@ a {
       cursor: pointer;
       border: 0;
       outline: none;
-      background: #ffffff;
+      background: #ffffff; }
+    .my-dots li.slick-active button {
+      background: #ffd332;
+      color: #ffd332;
       /* style */ }
-      .my-dots li button:hover {
-        background-color: #ffd332; }
+
+.services {
+  margin-top: 135px;
+  background: #f7f7f7;
+  position: relative; }
+  .services-head {
+    width: 244px;
+    height: 59px;
+    background: #ffd332;
+    text-align: center;
+    position: absolute;
+    top: -30px;
+    left: 335px; }
+    .services-head__title {
+      font-size: 28px;
+      line-height: 28px;
+      font-family: 'ProximaNovaSemibold', sans-serif;
+      margin-top: 15px; }
+
+.card {
+  position: relative;
+  text-align: center;
+  margin-bottom: 18px; }
+  .card:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5; }
+  .card-text {
+    z-index: 5;
+    display: block;
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 68px; }
+  .card-title {
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'ProximaNovaRg', sans-serif;
+    color: #ffffff;
+    font-weight: 300; }
+  .card__link {
+    display: block;
+    width: 138px;
+    margin: auto;
+    margin-right: 60px;
+    font-size: 15px;
+    font-family: 'ProximaNovaSemibold', sans-serif;
+    text-transform: uppercase;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 0px;
+    padding-right: 0px; }
+  .cards {
+    padding-top: 102px;
+    padding-bottom: 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
 
 /*# sourceMappingURL=style.css.map */
