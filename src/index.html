@@ -36,6 +36,11 @@
 						<a class="header-navbar__link" href="#map">Контакты</a>
 					</li>
 				</ul>
+				<div class="section-burger" id="section-burger">
+  				<a href="#" class="menu-btn">
+    				<span></span>
+  				</a>
+				</div>	
 			</div> 
 			<!-- /.header-navbar --> 
 
@@ -48,8 +53,13 @@
 				<button class="button header-contacts__button">Заказать звонок</button>
 			</div>
 			 <!-- /.header-contacts --> 
+		
+
 		</div>
-		 <!-- /.header-block --> 
+		 <!-- /.header-block -->
+
+
+
 	</div>
 </header>
 <!-- /.header -->	
@@ -110,7 +120,7 @@
 		<h2 class="section-title">УСЛУГИ</h2>
 		<div class="cards">
 			
-			<div class="card services-card">
+			<div class="card services-card wow fadeInUp" data-wow-delay="0.1s">
 				<div class="card__image">
 					<img src="image/services/servicer-card__one.jpg" alt="Картинка">
 				</div>
@@ -127,7 +137,7 @@
 			
 			<!-- /.card services-card -->
 
-			<div class="card services-card">
+			<div class="card services-card 	wow fadeInUp" data-wow-delay="0.2s">
 				<div class="card-image">
 					<img src="image/services/services-card__two.jpg" alt="Картинка">
 				</div>
@@ -142,7 +152,7 @@
 			</div>
 			 <!-- /.card services-card --> 
 						
-			<div class="card services-card">
+			<div class="card services-card wow fadeInUp" data-wow-delay="0.3s">
 				<div class="card__image">
 					<img src="image/services/services-card__three.jpg" alt="Картинка">
 				</div>
@@ -157,7 +167,7 @@
 			</div>
 			 <!-- /.card services-card --> 
 
-			<div class="card services-card">
+			<div class="card services-card wow fadeInUp" data-wow-delay="0.4s">
 				<div class="card__image">
 					<img src="image/services/servicer-card__one.jpg" alt="Картинка">
 				</div>
@@ -172,7 +182,7 @@
 			</div>
 			 <!-- /.card services-card --> 
 
-			<div class="card services-card">
+			<div class="card services-card wow fadeInUp" data-wow-delay="0.5s">
 				<div class="card__image">
 					<img src="image/services/services-card__two.jpg" alt="Картинка">
 				</div>
@@ -187,7 +197,7 @@
 			</div>
 			 <!-- /.card services-card --> 
 
-			<div class="card services-card">
+			<div class="card services-card wow fadeInUp" data-wow-delay="0.6s">
 				<div class="card__image">
 					<img src="image/services/services-card__three.jpg" alt="Картинка">
 				</div>
@@ -360,7 +370,7 @@
 <section class="navigate" id="map">	
 	<div class="map">
 	</div>
-<!-- Модальное окно -->
+	<!-- Модальное окно -->
 	<div class="navigate-modal">
 		<div class="navigate-modal__title">
 			<p class="modal-title__bl">оставьте <span class="modal-title__orange">заявку</span></p>
@@ -379,23 +389,13 @@
 	<div class="container">
 		<div class="footer-block">
     	<div class="footer-block__adress">
-          <img class="footer-block__placeholder" src="image/footer/placeholder.png" alt="Картинка">
+          <img class="footer-block__placeholder" src="image/footer/placeholde.png" alt="Картинка">
           <a class="footer-block__street" target="_blank" href=https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A61129aabc72a06cb5fd2c8b2ddd653f97508ad11ac9934da25eb73c8f8c9157c&amp;width=100%25&amp;height=666&amp;lang=ru_RU&amp;scroll=false">г. Москва, ул. Советская 48 корп. 3</a>
     	</div>
 			<div class="footer-social">
-          <a class="footer-social__item" href="https://www.instagram.com/" target="_blank">
-           <img src="image/footer/instagram (2).png" alt="Картинка">
-          </a>
-          <a class="footer-social__item" href="https://vk.com/" target="_blank">
-            <svg class="footer-social__vk footer-social__icon">
-              <use href="image/footer/ok.svg"></use>
-            </svg>
-          </a>
-          <a class="footer-social__item" href="https://ok.ru/" target="_blank">
-            <svg class="footer-social__ok footer-social__icon">
-              <use xlink:href="#ok"></use>
-            </svg>
-          </a>
+				<a class="footer-social__item" href="https://www.instagram.com/"><img src="image/footer/instagram.png" alt="Картинка"></a>
+				<a class="footer-social__item" href="https://vk.com/"><img src="image/footer/vk.png" alt="Картинка"></a>
+				<a class="footer-social__item" href="https://ok.ru/"><img src="image/footer/facebook.png" alt="Картинка"></a>
 			</div>
 			<ul class="footer-contacts">
 				<li class="footer-contacts__item">
@@ -413,9 +413,12 @@
 
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js">
-</script>  
+</script> 
+<script src="js/burger.js"></script> 
 <script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script>
+	new WOW().init();
 	// Слайдер в секции hero
 	$(document).ready(function() {
 		$('.hero-slider').slick({
@@ -430,6 +433,7 @@
 	});
 </script>
 <script>
+	
 		// Слайдер в секции 	feedback
 	$(document).ready(function() {	
 		$('.feedback-slider').slick({
