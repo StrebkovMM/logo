@@ -1,0 +1,109 @@
+.footer
+  padding-top: 54px
+  padding-bottom: 59px
+  background-color: #000000
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__adress
+      display: flex
+    &__street
+      margin-left: 14px
+      font-size: 20px
+      color: #ffffff
+      +reg
+      text-decoration: none
+  &-social
+    display: flex
+    align-items: center
+    margin: 0
+    margin-left: 39px
+    padding: 0
+    width: 100px
+    height: 10px
+    list-style-type: none
+    &__item
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-left: 10px
+      width: 25px
+      height: 25px
+      background-color: #ffffff
+      border-radius: 50%
+      transition: background .1s linear
+      &:hover
+        background-color: $main-color
+      &:hover .footer-social__icon
+        fill: $main-color
+    &__icon
+      display: block
+      fill: $main-color
+    &__instagram
+      height: 18px
+    &__vk
+      height: 18px
+    &__ok
+      height: 18px
+  &-contacts
+    margin: 0
+    padding: 0
+    display: flex
+    align-items: center
+    list-style-type: none
+    &__item
+      display: flex
+      align-items: center
+      margin-left: 49px
+    &__link
+      margin-left: 9px
+      font-size: 18px
+      color: #ffffff
+      +reg
+      text-decoration: none
+@media (max-width: 1200px)
+  .footer
+    &-block
+      padding: 0 10px 
+@media (max-width: 1200px)
+  .footer
+    &-block
+      flex-direction: column
+      &__adress
+        margin: 0
+        margin-bottom: 20px
+    &-social
+      margin: 0
+      margin-bottom: 20px
+      order: -1
+    &-contacts
+      &__item
+        margin-left: 8px
+@media (max-width: 576px)
+  .footer
+    &-block
+      &__placeholder
+        height: 15px
+      &__street
+        margin-left: 5px
+        font-size: 13px
+    &-contacts
+      &__img
+        height: 13px
+      &__link
+        margin-left: 5px
+        font-size: 13px
+@media (max-width: 410px)
+  .footer
+    &-block
+      &__adress
+        margin-bottom: 10px
+    &-social
+      margin-bottom: 15px
+    &-contacts
+      flex-direction: column
+      &__item
+        margin: 0
+        margin-bottom: 10px
+

@@ -1,6 +1,8 @@
 .hero
 	height: 742px
 	margin-top: 3px
+	position: relative
+	
 	&-slider
 		&__one
 			background: url('../image/hero/hero-bg__one.jpg') no-repeat
@@ -97,9 +99,6 @@
 				text-transform: uppercase
 				padding-left: 38px
 				padding-right: 38px
-			
-
-
 .my-dots
 	position: absolute
 	width: 100%
@@ -130,4 +129,66 @@
 		&.slick-active button
 			background: $main-color	
 			color: $main-color		
+
+
+
+@media (max-width: 1200px)	
+	.hero	
+		.slider
+			&-item
+				padding-top: 50px
+@media (max-width: 940px)
+	.hero	
+		.slider
+			&-item
+				margin-left: 10px
+				width: 95%
+				&__title		
+					margin-bottom: 40px
+				&__subtitle	
+					margin-bottom: 40px
+				&__text	
+					margin-bottom: 40px		
+	.my-dots	
+		display: none !important
+			/* style */	
+
+@media (max-width: 840px)
+	.hero	
+		.slider
+			&-item
+				margin-left: 10px
+				width: 95%
+				&__title
+					font-size: 30px
+				&__subtitle
+					font-size: 30px
+				&__text
+					font-size: 15px
+@media (max-width: 495px)
+	.hero	
+		.slider
+			&-item		
+				&__title
+					font-size: 20px
+				&__subtitle
+					font-size: 20px
+				&__text
+					font-size: 15px
+@media (max-width: 465px)
+	.hero	
+		.slider
+			&-item		
+				&__title
+					font-size: 16px
+					line-height: 1.4
+					margin-bottom: 60px
+				&__subtitle
+					font-size: 16px
+					line-height: 1.4
+					margin-bottom: 60px
+				&__text
+					font-size: 13px
+					margin-bottom: 60px
+
 			/* style */	

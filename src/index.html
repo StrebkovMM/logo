@@ -20,11 +20,21 @@
 
 			<div class="header-navbar">
 				<ul class="header-navbar__list">
-					<li class="header-navbar__item"><a class="header-navbar__link" href="#">Услуги</a></li>
-					<li class="header-navbar__item"><a class="header-navbar__link" href="#">Цены</a></li>
-					<li class="header-navbar__item"><a  class="header-navbar__link" href="#">Отзывы</a></li>
-					<li class="header-navbar__item"><a class="header-navbar__link" href="#">Новости</a></li>
-					<li class="header-navbar__item"><a class="header-navbar__link" href="#">Контакты</a></li>
+					<li class="header-navbar__item">
+						<a class="header-navbar__link" href="#services">Услуги</a>
+					</li>
+					<li class="header-navbar__item">
+						<a class="header-navbar__link" href="#services">Цены</a>
+					</li>
+					<li class="header-navbar__item">
+						<a  class="header-navbar__link" href="#feedback">Отзывы</a>
+					</li>
+					<li class="header-navbar__item">
+						<a class="header-navbar__link" href="#news">Новости</a>
+					</li>
+					<li class="header-navbar__item">
+						<a class="header-navbar__link" href="#map">Контакты</a>
+					</li>
 				</ul>
 			</div> 
 			<!-- /.header-navbar --> 
@@ -44,7 +54,7 @@
 </header>
 <!-- /.header -->	
 
-<section class="hero">
+<section class="hero" id="hero">
 	<div class="slider hero-slider">
 		<div class="hero-slider__one">
 			<div class="container">
@@ -95,13 +105,11 @@
 </section>
 <!-- /.hero -->
 
-<section class="services">
+<section class="services" id="services">
 	<div class="container">
-		<div class="services-head">
-			<h2 class="services-head__title ">УСЛУГИ</h2>
-		</div>
+		<h2 class="section-title">УСЛУГИ</h2>
 		<div class="cards">
-
+			
 			<div class="card services-card">
 				<div class="card__image">
 					<img src="image/services/servicer-card__one.jpg" alt="Картинка">
@@ -110,7 +118,13 @@
 					<h4 class="card-title">Монтаж систем <br>отопления</h4>
 					<button href="#" class="card__link button" >Узнать цену</button>
 				</div>
+				<div class="card-active">
+        	<p class="card-active__description">Здесь будет короткое описание о данной услуге</p>
+        	<button class="card-active__price button" href="#">От 500 р.</button>
+      	</div>
+
 			</div>
+			
 			<!-- /.card services-card -->
 
 			<div class="card services-card">
@@ -121,6 +135,10 @@
 					<h4 class="card-title">Монтаж сантехнического  оборудования</h4>
 					<button href="#" class="card__link button" >Узнать цену</button>
 				</div>
+				<div class="card-active">
+        	<p class="card-active__description">Здесь будет короткое описание о данной услуге</p>
+        	<button class="card-active__price button" href="#">От 500 р.</button>
+      	</div>
 			</div>
 			 <!-- /.card services-card --> 
 						
@@ -132,6 +150,10 @@
 					<h4 class="card-title ">Монтаж канализационного оборудования</h4>
 					<button href="#" class="card__link button" >Узнать цену</button>
 				</div>
+				<div class="card-active">
+        	<p class="card-active__description">Здесь будет короткое описание о данной услуге</p>
+        	<button class="card-active__price button" href="#">От 500 р.</button>
+      	</div>				
 			</div>
 			 <!-- /.card services-card --> 
 
@@ -143,6 +165,10 @@
 					<h4 class="card-title">Монтаж систем <br>отопления</h4>
 					<button href="#" class="card__link button" >Узнать цену</button>
 				</div>
+				<div class="card-active">
+        	<p class="card-active__description">Здесь будет короткое описание о данной услуге</p>
+        	<button class="card-active__price button" href="#">От 500 р.</button>
+      	</div>
 			</div>
 			 <!-- /.card services-card --> 
 
@@ -154,6 +180,10 @@
 					<h4 class="card-title">Монтаж сантехнического оборудования</h4>
 					<button href="#" class="card__link button" >Узнать цену</button>
 				</div>
+				<div class="card-active">
+        	<p class="card-active__description">Здесь будет короткое описание о данной услуге</p>
+        	<button class="card-active__price button" href="#">От 500 р.</button>
+      	</div>
 			</div>
 			 <!-- /.card services-card --> 
 
@@ -165,9 +195,12 @@
 					<h4 class="card-title">Монтаж канализационного оборудования</h4>
 					<button href="#" class="card__link button">Узнать цену</button>
 				</div>
+				<div class="card-active">
+        	<p class="card-active__description">Здесь будет короткое описание о данной услуге</p>
+        	<button class="card-active__price button" href="#">От 500 р.</button>
+      	</div>
 			</div>
-			 <!-- /.card services-card --> 
-
+			<!-- /.card services-card --> 
 
 		</div>
 		 <!-- /.cards --> 
@@ -176,17 +209,212 @@
 </section>
 <!-- /.services --> 
 
+<section class="advantage" id="advantage">
+  <div class="container">
+  	<h3 class="section-title">Почему мы?</h3>
+    <div class="advantage-block">
+      
+      <ul class="advantage-list">
+        <li class="advantage-list__item">
+          <img class="advantage-list__img" alt="Картинка" src="image/advantage/warranty.png">
+          <p class="advantage-list__text">100 % Гарантия качества</p>
+        </li>
+        <li class="advantage-list__item">
+          <img class="advantage-list__img" alt="Картинка" src="image/advantage/diagram.png">
+          <p class="advantage-list__text">С нами выгодно</p>
+        </li>
+        <li class="advantage-list__item">
+          <img class="advantage-list__img" alt="Картинка" src="image/advantage/trophy.png">
+          <p class="advantage-list__text">Большой опыт</p>
+        </li>
+         <li class="advantage-list__item">
+          <img class="advantage-list__img" alt="Картинка" src="image/advantage/operator.png">
+           <p class="advantage-list__text">Быстрая онлайн поддержка</p>
+         </li>
+        <li class="advantage-list__item">
+          <img class="advantage-list__img" alt="Картинка" src="image/advantage/care.png">
+          <p class="advantage-list__text">С заботой о клиенте</p>
+        </li>
+        <li class="advantage-list__item">
+          <img class="advantage-list__img" alt="Картинка" src="image/advantage/calendar.png">
+          <p class="advantage-list__text correct-text__six">Точно в срок</p>
+        </li>
+      </ul>
+        <ul class="advantage-steps">
+          <li class="advantage-steps__item">
+            <p class="advantage-steps__number">1</p>
+            <p class="advantage-steps__text">Вызов бригады на следующий день после звонка</p>
+          </li>
+          <li class="advantage-steps__item">
+            <p class="advantage-steps__number">2</p>
+            <p class="advantage-steps__text">Вся бригада имеет специальное образование</p>
+          </li>
+          <li class="advantage-steps__item">
+            <p class="advantage-steps__number">3</p>
+            <p class="advantage-steps__text">Длительный срок на рынке</p>
+          </li>
+          <li class="advantage-steps__item">
+            <p class="advantage-steps__number">4</p>
+            <p class="advantage-steps__text">Опыт, качество и скорость</p>
+          </li>
+        </ul>
+    </div>
+  </div>
+</section>
+<!-- /.advantage -->
 
+<section class="feedback"	id="feedback">
+  <div class="container">
+  	<h3 class="section-title"> Отзывы</h3>      
+     <ul class="slick feedback-slider">
+        <li class="feedback-slider__item">
+          <img class="feedback-slider__img" alt="Картинка" src="image/feedback/feedback-two.png">
+          <p class="feedback-slider__name">Анна Говорухина</p>
+          <p class="feedback-slider__text">Authoritatively incubate multidisciplinary partnerships and user friendly e-markets. Interactively whiteboard client-based leadership skills </p>
+          <div class="feedback-slider__like">
+            <div class="block-like">
+              <img class="block-like__img" alt="Картинка" src="image/feedback/like.png">
+              <span class="block-like__counter">211</span>
+            </div>
+          	<div class="block-dislike">
+            	<img class="block-dislike__img" alt="Картинка" src="image/feedback/dislike.png">
+            	<span class="block-dislike__counter">5</span>
+         		 </div>
+          </div>  
+        </li>
+        <li class="feedback-slider__item slick-slide ">
+          <img class="feedback-slider__img" alt="Картинка" src="image/feedback/feedback-one.png">
+          <p class="feedback-slider__name">Виктор Шукшин</p>
+          <p class="feedback-slider__text">Synergistically mesh magnetic leadership rather than cooperative best practices. Authoritatively initiate.Monotonectally actualize 24/7 metrics</p>
+          <div class="feedback-slider__like">
+            <div class="block-like">
+              <img class="block-like__img" alt="Картинка" src="image/feedback/like.png">
+              <span class="block-like__counter">143</span>
+            </div>
+            <div class="block-dislike">
+              <img class="block-dislike__img" alt="Картинка" src="image/feedback/dislike.png">
+              <span class="block-dislike__counter">2</span>
+            </div>
+          </div>
+        </li>
+        <li class="feedback-slider__item slick-slide ">	
+          <img class="feedback-slider__img" alt="Картинка" src="image/feedback/feedback-two.png">
+          <p class="feedback-slider__name">Анна Говорухина</p>
+          <p class="feedback-slider__text">Authoritatively incubate multidisciplinary partnerships and user friendly e-markets. Interactively whiteboard client-based leadership skills </p>
+          <div class="feedback-slider__like">
+            <div class="block-like">
+              <img class="block-like__img" alt="Картинка" src="image/feedback/like.png">
+              <span class="block-like__counter">211</span>
+            </div>
+            <div class="block-dislike">
+              <img class="block-dislike__img" alt="Картинка" src="image/feedback/dislike.png">
+              <span class="block-dislike__counter">5</span>
+            </div>
+          </div>
+        </li>      	
+     </ul>
+  </div>
+</section> 
+<!-- /.feedback -->
 
+<section class="news" id="news">
+	<div class="container">
+		<h3 class="section-title">Новости</h3>
+		<div class="news-block">
+			<ul class="news-list">
 
+				<li class="news-list__item">
+					<img class="news-list__img" alt="Картинка" src="image/news/news-one.png">
+						<div class="news-list__wrap">
+							<h4 class="news-list__title">Ремонт раковины</h4>
+							<p class="news-list__data"><span class="news-list__data_bg">29</span>11.2017</p>
+						</div>
+						<p class="news-list__text">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent infrastructures. Quickly deploy <br>best-of-breed niche markets without</p>
+				</li>
+
+				<li class="news-list__item">
+					<img class="news-list__img" alt="Картинка" src="image/news/news-two.png">
+						<div class="news-list__wrap">
+							<h4 class="news-list__title">Подчинка слива</h4>
+              <p class="news-list__data"><span class="news-list__data_bg">29</span>11.2017</p>
+						</div>
+						<p class="news-list__text">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent infrastructures. Quickly deploy <br>best-of-breed niche markets without 
+						</p>
+				</li>
+
+				<li class="news-list__item">
+					<img class="news-list__img" alt="Картинка" src="image/news/news-three.png">
+						<div class="news-list__wrap">
+							<h4 class="news-list__title">Ремонт раковины</h4>
+								<p class="news-list__data"><span class="news-list__data_bg">29</span>11.2017</p>
+						</div>
+						<p class="news-list__text">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent infrastructures. Quickly deploy <br>best-of-breed niche markets without </p>
+					</li>
+				</ul>
+        <a class="news-block__link" href="#">Читать все новости</a>
+		</div>
+	</div>
+</section>
+<!-- /.news -->
+
+<section class="navigate" id="map">	
+	<div class="map">
+	</div>
+<!-- Модальное окно -->
+	<div class="navigate-modal">
+		<div class="navigate-modal__title">
+			<p class="modal-title__bl">оставьте <span class="modal-title__orange">заявку</span></p>
+		</div>
+	</div>
+ <!-- /.map-modal -->	
+</section>
+<!-- /.map -->
+
+<section class="footer">
+	<div class="container">
+		<div class="footer-block">
+    	<div class="footer-block__adress">
+          <img class="footer-block__placeholder" src="image/footer/placeholder.png" alt="Картинка">
+          <a class="footer-block__street" target="_blank" href=https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A61129aabc72a06cb5fd2c8b2ddd653f97508ad11ac9934da25eb73c8f8c9157c&amp;width=100%25&amp;height=666&amp;lang=ru_RU&amp;scroll=false">г. Москва, ул. Советская 48 корп. 3</a>
+    	</div>
+			<div class="footer-social">
+          <a class="footer-social__item" href="https://www.instagram.com/" target="_blank">
+            <svg class="footer-social__instagram footer-social__icon">
+              <use xlink:href="#instagram"></use>
+            </svg>
+          </a>
+          <a class="footer-social__item" href="https://vk.com/" target="_blank">
+            <svg class="footer-social__vk footer-social__icon">
+              <use xlink:href="#vk"></use>
+            </svg>
+          </a>
+          <a class="footer-social__item" href="https://ok.ru/" target="_blank">
+            <svg class="footer-social__ok footer-social__icon">
+              <use xlink:href="#ok"></use>
+            </svg>
+          </a>
+			</div>
+			<ul class="footer-contacts">
+				<li class="footer-contacts__item">
+					<img class="footer-contacts__img" src="image/footer/email.png" alt="Картинка">
+					<a class="footer-contacts__link" href="mailto:infosanteh@gmail.com">infosanteh@gmail.com</a>
+				</li>
+				<li class="footer-contacts__item">
+					<img class="footer-contacts__img" src="image/footer/phone.png" alt="Картинка">
+					<a class="footer-contacts__link" href="tel: +7(863)342-22-21">+7 (863) 342-22-21</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
 
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js">
 </script>  
 <script src="js/slick.min.js"></script>
 <script>
+	// Слайдер в секции hero
 	$(document).ready(function() {
-		// Слайдер в секции hero
 		$('.hero-slider').slick({
 			  slidesToShow: 1,
 			  infinite: true,
@@ -198,5 +426,42 @@
 		});
 	});
 </script>
+<script>
+		// Слайдер в секции 	feedback
+	$(document).ready(function() {	
+		$('.feedback-slider').slick({
+			slidesToShow: 2,
+			infinite: true,
+			slidesToScroll: 1,
+			dots: true,
+			dotsClass: "feedback-dots",	
+			prevArrow: false,
+			nextArrow: false,
+  		responsive: [
+ 			{	
+ 				breakpoint: 1210,
+      	settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+      	}
+    	}] 	
+		});
+	});
+</script>
+<script>
+	var isAddedMap = false;
+
+	$(window).scroll(function() {
+		var el = $('.map');
+		if ($(this).scrollTop() > el.offset().top - 800) {
+			if(isAddedMap) return;
+			isAddedMap = true;
+			var script = document.createElement('script');
+			script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A61129aabc72a06cb5fd2c8b2ddd653f97508ad11ac9934da25eb73c8f8c9157c&amp;width=100%25&amp;height=666&amp;lang=ru_RU&amp;scroll=false";
+			el.append(script);
+		};
+	});	
+</script>	
+
 </body>
 </html>

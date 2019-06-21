@@ -1,0 +1,87 @@
+.news
+  background-color: #f7f7f7
+  position: relative
+  margin-top: 145px
+  &-block
+    padding-top: 89px
+    padding-bottom: 70px
+    position: relative
+    &__link
+      display: block
+      margin: 0 auto
+      margin-top: 48px
+      padding-top: 17px
+      padding-bottom: 17px
+      width: 300px
+      font-size: 20px
+      +sbld
+      font-weight: 300
+      background-color: $main-color
+      color: $text-color
+      text-align: center
+      text-decoration: none
+      text-transform: uppercase
+  &-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap 
+    margin: 0
+    padding-left: 0
+    list-style-type: none     
+    &__item
+      max-width: 377px
+      width: 100%
+    &__img
+      width: 100%
+    &__wrap
+      display: flex
+      justify-content: space-between
+      margin-top: 20px
+    &__title
+      margin: 0
+      font-size: 20px
+      color: $text-color
+      text-transform: uppercase
+      +bold
+      font-weight: 600
+    &__data
+      margin: 0
+      margin-top: 4px
+      margin-right: 47px
+      font-size: 16px
+      color: $text-color
+      +reg
+      font-weight: 300
+      &_bg
+        +bold
+        font-weight: 600
+        background-color: $main-color
+        padding: 2px 3px
+    &__text
+      max-width: 340px
+      width: 100%
+      font-size: 18px
+      color: $text-color
+      line-height: 1.6
+      +reg
+      font-weight: 300
+@media (max-width: 1200px)
+  .news
+    &-list
+      flex-direction: column
+      &__item
+        margin: 0 auto
+@media (max-width: 576px)
+  .news
+    &-list
+      &__item
+        max-width: 300px
+        width: 100%
+      &__title
+        font-size: 18px
+      &__data
+        font-size: 14px
+      &__text
+        font-size: 16px
+        min-width: 280px
+        width: 100%  

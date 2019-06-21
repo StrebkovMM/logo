@@ -15,24 +15,28 @@
 			justify-content: space-between	
 			list-style-type: none
 			margin-top: 7px
-			margin-left: 18px
+			margin-left: 76px
 		&__item
 			+reg
 			color: $text-color
 			position: relative	
 			display: block
+			margin-right: 58px
 			&:after 	
-				content: ''
-				border: 1px solid $text-color
-				opacity: 0.149
-				margin: 0 28px
+				content: '|'
+				position: absolute
+				display: block
+				left: 100%
+				top: 0
+				height: 5px
+				margin-left: 25px
+				
 			&:last-child
 				&:after
 					display: none
 		&__link	
 			display: inline-block
-			position: relative
-			
+			position: relative		
 			&:after
 				content: ''
 				z-index: 1
@@ -43,11 +47,7 @@
 				width: 100%
 				height: 3px
 				background-color: #ffffff
-				transition: 0.2s
-
-
-								
-							
+				transition: 0.2s						
 			&:hover
 				color: $main-color 
 				&:after

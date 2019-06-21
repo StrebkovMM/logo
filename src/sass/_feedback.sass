@@ -1,0 +1,116 @@
+.feedback 
+  background-color: #010101
+  padding-bottom: 93px
+  margin-top: 142px
+  position: relative
+  .section-title
+    position: absolute
+    margin: 0
+  &-slider
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap 
+    margin: 0
+    padding: 0
+    list-style-type: none
+    text-align: center
+    padding-top: 100px
+    padding-bottom: 100px
+    &__img
+      margin: auto
+    &__item
+      padding-top: 8px
+      padding-left: 0
+      // max-width: 475px
+      // margin-left: 0
+      // margin-right: 220px 
+    &__name
+      margin-top: 15px
+      font-size: 20px
+      color: $main-color
+      +bold
+      font-weight: 600
+    &__text
+      font-size: 20px
+      color: #ffffff 
+      max-width: 475px 
+      margin: 0 auto
+      +reg
+      font-weight: 300
+      line-height: 1.4
+    &__like
+      display: flex
+      justify-content: center
+      color: #ffffff
+      .block-like
+        display: flex
+        align-items: center
+        &__img
+          &:hover
+            cursor: pointer
+        &__counter
+          margin-left: 3px
+          margin-top: 4px
+          font-size: 15px
+          +reg
+          font-weight: 300
+      .block-dislike
+        display: flex
+        align-items: center
+        margin-left: 35px
+        &__img
+          &:hover
+            cursor: pointer 
+        &__counter
+          margin-left: 3px
+          margin-top: 4px
+          font-size: 15px
+          +reg
+          font-weight: 300      
+  &-dots
+    position: absolute
+    width: 100%
+    display: block
+    padding: 0
+    list-style: none
+    text-align: center
+    top: 510px
+    li 
+      display: inline-block
+      width: 20px
+      height: 20px
+      margin: 0 5px
+      padding: 0
+      cursor: pointer
+      list-style: none
+      button
+        font-size: 0
+        line-height: 0
+        display: block
+        width: 20px
+        height: 20px
+        padding: 5px
+        cursor: pointer
+        border: 0
+        outline: none
+        background: #ffffff     
+      &.slick-active button
+        background: $main-color 
+        color: $main-color    
+
+  .section-title
+    color: $text-color
+
+@media (max-width: 990px)
+  .feedback
+    &-slider
+      &__like
+        margin-top: 20px
+    &-dots
+      display: none !important
+
+@media (max-width: 500px)
+  .feedback
+    &-slider
+      &__like
+        margin-top: 50px

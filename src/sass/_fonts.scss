@@ -4,7 +4,7 @@
     src: url('../fonts/ProximaNovaReg/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
         url('../fonts/ProximaNovaReg/ProximaNova-Regular.woff') format('woff'),
         url('../fonts/ProximaNovaReg/ProximaNova-Regular.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -37,6 +37,15 @@
     font-weight: 300;
     font-style: normal;
 }
+@font-face {
+    font-family: 'ProximaNovaBlack';
+    src: url('../fonts/ProximaNovaBlack/ProximaNova-Black.eot');
+    src: url('../fonts/ProximaNovaBlack/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNovaBlack/ProximaNova-Black.woff') format('woff'),
+        url('../fonts/ProximaNovaBlack/ProximaNova-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @mixin reg{
 	font-family: 'ProximaNovaRg', sans-serif;
@@ -51,4 +60,7 @@
 }
 @mixin lt {
     font-family: 'ProximaNovaLt', sans-serif;
+}
+@mixin black {
+    font-family: 'ProximaNovaBlack';
 }
