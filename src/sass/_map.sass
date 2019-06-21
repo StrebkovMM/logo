@@ -33,11 +33,34 @@
 			height: 1px
 			left: 0
 			top: -4px
-
 	.modal-title__orange
 		color: $main-color	
 		font-size: 20px
 		+bold
 		font-weight: 900
-		
+	&-form
+		text-align: center	
+		&__input
+			display: block
+			margin: 0 auto
+			border: none
+			width: 310px
+			margin-bottom: 58px
+			border-bottom: 1px solid $text-color		
+			&::-webkit-input-placeholder
+				font-size: 18px
+				color: $text-color
+				+reg
+				font-style: italic
+			&:first-child
+				padding-top: 25px	
+		&__button
+			border: none
+			background-color: $main-color
+			color: $text-color
+			font-size: 20px
+			font-weight: 600
+			+reg
+			padding: 23px 58px 21px 57px
+			text-transform: uppercase
 			

@@ -1230,6 +1230,31 @@ a {
     font-size: 20px;
     font-family: 'ProximaNovaBold', sans-serif;
     font-weight: 900; }
+  .navigate-form {
+    text-align: center; }
+    .navigate-form__input {
+      display: block;
+      margin: 0 auto;
+      border: none;
+      width: 310px;
+      margin-bottom: 58px;
+      border-bottom: 1px solid #333333; }
+      .navigate-form__input::-webkit-input-placeholder {
+        font-size: 18px;
+        color: #333333;
+        font-family: 'ProximaNovaRg', sans-serif;
+        font-style: italic; }
+      .navigate-form__input:first-child {
+        padding-top: 25px; }
+    .navigate-form__button {
+      border: none;
+      background-color: #ffd332;
+      color: #333333;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: 'ProximaNovaRg', sans-serif;
+      padding: 23px 58px 21px 57px;
+      text-transform: uppercase; }
 
 .modal {
   position: fixed;
@@ -1309,26 +1334,17 @@ a {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-left: 10px;
-      width: 25px;
-      height: 25px;
-      background-color: #ffffff;
-      border-radius: 50%;
-      -webkit-transition: background 0.1s linear;
-      transition: background 0.1s linear; }
+      margin-left: 10px; }
       .footer-social__item:hover {
         background-color: #ffd332; }
       .footer-social__item:hover .footer-social__icon {
         fill: #ffd332; }
+      .footer-social__item img {
+        width: 25px;
+        height: 25px; }
     .footer-social__icon {
       display: block;
       fill: #ffd332; }
-    .footer-social__instagram {
-      height: 18px; }
-    .footer-social__vk {
-      height: 18px; }
-    .footer-social__ok {
-      height: 18px; }
   .footer-contacts {
     margin: 0;
     padding: 0;
@@ -1398,5 +1414,4 @@ a {
     .footer-contacts__item {
       margin: 0;
       margin-bottom: 10px; } }
-
 /*# sourceMappingURL=style.css.map */
